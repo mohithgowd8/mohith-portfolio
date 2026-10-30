@@ -1,0 +1,34 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgB2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1F1712"/>
+      <stop offset="100%" stop-color="#120D09"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#bgB2)"/>
+  <!-- Wireframe to UI transformation -->
+  <g transform="translate(70, 70)">
+    <!-- Wireframe side -->
+    <rect x="0" y="0" width="210" height="260" rx="12" fill="none" stroke="#66594C" stroke-width="2" stroke-dasharray="6,4"/>
+    <line x1="20" y1="30" x2="100" y2="30" stroke="#66594C" stroke-width="3"/>
+    <rect x="20" y="55" width="170" height="90" fill="none" stroke="#66594C" stroke-width="1.5"/>
+    <line x1="20" y1="55" x2="190" y2="145" stroke="#66594C" stroke-width="1"/>
+    <line x1="20" y1="145" x2="190" y2="55" stroke="#66594C" stroke-width="1"/>
+    <line x1="20" y1="170" x2="190" y2="170" stroke="#66594C" stroke-width="2"/>
+    <line x1="20" y1="190" x2="140" y2="190" stroke="#66594C" stroke-width="2"/>
+
+    <!-- Arrow -->
+    <text x="235" y="145" font-family="'Outfit', sans-serif" font-weight="900" font-size="28" fill="#FF9D00">➔</text>
+
+    <!-- Finished UI side -->
+    <rect x="260" y="0" width="200" height="260" rx="12" fill="#FAF7F0" filter="drop-shadow(0 15px 25px rgba(0,0,0,0.4))"/>
+    <rect x="260" y="0" width="200" height="24" rx="12" fill="#2B2119"/>
+    <circle cx="275" cy="12" r="4" fill="#FF9D00"/>
+    <rect x="275" y="40" width="80" height="12" rx="6" fill="#FF9D00"/>
+    <rect x="275" y="65" width="170" height="90" rx="8" fill="#E8DEC9"/>
+    <text x="360" y="120" font-family="'Outfit', sans-serif" font-size="36" text-anchor="middle">⚡</text>
+    <rect x="275" y="170" width="120" height="10" rx="4" fill="#2B2119"/>
+    <rect x="275" y="190" width="170" height="6" rx="3" fill="#B0A69A"/>
+    <rect x="275" y="215" width="85" height="24" rx="12" fill="#FF9D00"/>
+  </g>
+</svg>

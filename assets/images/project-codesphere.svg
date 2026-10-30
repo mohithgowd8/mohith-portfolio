@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="codeBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#14141E"/>
+      <stop offset="100%" stop-color="#1E1E2E"/>
+    </linearGradient>
+    <linearGradient id="purpleOrange" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8B5CF6"/>
+      <stop offset="100%" stop-color="#FF9D00"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="500" rx="16" fill="url(#codeBg)"/>
+  
+  <!-- Main IDE Window -->
+  <rect x="40" y="30" width="720" height="440" rx="12" fill="#181825" stroke="#2E2E42" stroke-width="1.5"/>
+  
+  <!-- Window Header -->
+  <rect x="40" y="30" width="720" height="42" rx="12" fill="#1E1E2E"/>
+  <circle cx="68" cy="51" r="6" fill="#F38BA8"/>
+  <circle cx="88" cy="51" r="6" fill="#F9E2AF"/>
+  <circle cx="108" cy="51" r="6" fill="#A6E3A1"/>
+  
+  <text x="140" y="56" fill="#CDD6F4" font-family="'Outfit', sans-serif" font-weight="800" font-size="14">CodeSphere</text>
+  <rect x="230" y="42" width="100" height="20" rx="4" fill="#313244"/>
+  <text x="280" y="56" fill="#A6ADC8" font-family="'Inter', sans-serif" font-size="11" text-anchor="middle">workspace.js</text>
+
+  <!-- Left Sidebar (Curriculum Roadmaps) -->
+  <rect x="40" y="72" width="200" height="398" fill="#181825" stroke="#2E2E42" stroke-width="1"/>
+  <text x="56" y="100" fill="#6C7086" font-family="'Inter', sans-serif" font-weight="700" font-size="10" letter-spacing="1">LEARNING MODULES</text>
+  
+  <rect x="52" y="112" width="176" height="32" rx="6" fill="#313244"/>
+  <text x="64" y="132" fill="#FF9D00" font-family="'Inter', sans-serif" font-weight="600" font-size="12">▶ 01. Web Foundations</text>
+  
+  <rect x="52" y="152" width="176" height="32" rx="6" fill="#1E1E2E"/>
+  <text x="64" y="172" fill="#BAC2DE" font-family="'Inter', sans-serif" font-size="12">02. Modern JavaScript</text>
+  
+  <rect x="52" y="192" width="176" height="32" rx="6" fill="#1E1E2E"/>
+  <text x="64" y="212" fill="#BAC2DE" font-family="'Inter', sans-serif" font-size="12">03. React &amp; Components</text>
+  
+  <rect x="52" y="232" width="176" height="32" rx="6" fill="#1E1E2E"/>
+  <text x="64" y="252" fill="#BAC2DE" font-family="'Inter', sans-serif" font-size="12">04. Algorithms &amp; DS</text>
+
+  <!-- Code Editor Body -->
+  <rect x="240" y="72" width="520" height="260" fill="#11111B"/>
+  
+  <!-- Line Numbers -->
+  <text x="256" y="105" fill="#585B70" font-family="monospace" font-size="12">1</text>
+  <text x="256" y="130" fill="#585B70" font-family="monospace" font-size="12">2</text>
+  <text x="256" y="155" fill="#585B70" font-family="monospace" font-size="12">3</text>
+  <text x="256" y="180" fill="#585B70" font-family="monospace" font-size="12">4</text>
+  <text x="256" y="205" fill="#585B70" font-family="monospace" font-size="12">5</text>
+  <text x="256" y="230" fill="#585B70" font-family="monospace" font-size="12">6</text>
+  <text x="256" y="255" fill="#585B70" font-family="monospace" font-size="12">7</text>
+
+  <!-- Code Text -->
+  <text x="280" y="105" fill="#CBA6F7" font-family="monospace" font-size="12">import { CodeSphere } from '@codesphere/core';</text>
+  <text x="280" y="130" fill="#89B4FA" font-family="monospace" font-size="12">const student = new CodeSphere.Learner({</text>
+  <text x="300" y="155" fill="#CDD6F4" font-family="monospace" font-size="12">focus: <tspan fill="#A6E3A1">'Interactive Frontend &amp; AI'</tspan>,</text>
+  <text x="300" y="180" fill="#CDD6F4" font-family="monospace" font-size="12">progress: <tspan fill="#FAB387">100</tspan>,</text>
+  <text x="300" y="205" fill="#CDD6F4" font-family="monospace" font-size="12">milestones: [<tspan fill="#A6E3A1">'HTML'</tspan>, <tspan fill="#A6E3A1">'CSS'</tspan>, <tspan fill="#A6E3A1">'JS'</tspan>, <tspan fill="#A6E3A1">'React'</tspan>]</text>
+  <text x="280" y="230" fill="#89B4FA" font-family="monospace" font-size="12">});</text>
+  <text x="280" y="255" fill="#F38BA8" font-family="monospace" font-size="12">student.executeProject();</text>
+
+  <!-- Interactive Output Console -->
+  <rect x="240" y="332" width="520" height="138" fill="#181825" stroke="#2E2E42" stroke-width="1"/>
+  <rect x="240" y="332" width="520" height="28" fill="#1E1E2E"/>
+  <text x="260" y="350" fill="#A6ADC8" font-family="'Inter', sans-serif" font-weight="600" font-size="11">CONSOLE OUTPUT &amp; TEST RUNNER</text>
+  <text x="690" y="350" fill="#A6E3A1" font-family="'Inter', sans-serif" font-weight="700" font-size="11">✓ All Tests Passed</text>
+  
+  <text x="260" y="380" fill="#A6E3A1" font-family="monospace" font-size="12">&gt; Project compiled in 42ms</text>
+  <text x="260" y="402" fill="#CDD6F4" font-family="monospace" font-size="12">&gt; Interactive Playground Ready: 12 challenges completed</text>
+  <text x="260" y="424" fill="#FAB387" font-family="monospace" font-size="12">&gt; Ready for code review and deployment test.</text>
+</svg>

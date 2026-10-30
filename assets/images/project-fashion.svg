@@ -1,0 +1,45 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgFashion" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#241B16"/>
+      <stop offset="100%" stop-color="#150F0C"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bgFashion)"/>
+  
+  <!-- Browser Frame -->
+  <g transform="translate(60, 40)">
+    <rect width="680" height="420" rx="16" fill="#FAF7F2" filter="drop-shadow(0 20px 30px rgba(0,0,0,0.5))"/>
+    <!-- Browser Top Bar -->
+    <rect width="680" height="38" rx="16" fill="#EDE7DD"/>
+    <circle cx="25" cy="19" r="5" fill="#FF5F56"/>
+    <circle cx="42" cy="19" r="5" fill="#FFBD2E"/>
+    <circle cx="59" cy="19" r="5" fill="#27C93F"/>
+    <rect x="90" y="9" width="360" height="20" rx="10" fill="#FFF"/>
+    <text x="110" y="23" font-family="'Inter', sans-serif" font-size="10" fill="#999">https://atelier-luxe-couture.com</text>
+
+    <!-- Site Header -->
+    <text x="40" y="75" font-family="'Outfit', sans-serif" font-weight="900" font-size="20" fill="#1A130E">ATELIER NOIR</text>
+    <text x="280" y="72" font-family="'Inter', sans-serif" font-size="12" fill="#555">NEW IN    COLLECTIONS    EDITORIAL    RUNWAY</text>
+    <rect x="580" y="58" width="65" height="24" rx="12" fill="#1A130E"/>
+    <text x="612" y="74" font-family="'Inter', sans-serif" font-weight="700" font-size="10" fill="#FFF" text-anchor="middle">BAG (2)</text>
+
+    <!-- Hero Banner inside web mockup -->
+    <rect x="40" y="95" width="380" height="290" rx="12" fill="#E8DEC9"/>
+    <circle cx="230" cy="210" r="80" fill="#D8C8B0"/>
+    <text x="230" y="225" font-family="'Outfit', sans-serif" font-weight="900" font-size="70" fill="#FFF" text-anchor="middle">👗</text>
+    <rect x="65" y="270" width="160" height="85" rx="10" fill="#1A130E" fill-opacity="0.9"/>
+    <text x="80" y="295" font-family="'Outfit', sans-serif" font-weight="800" font-size="14" fill="#FF9D00">AUTUMN / WINTER '26</text>
+    <text x="80" y="315" font-family="'Outfit', sans-serif" font-weight="900" font-size="18" fill="#FFF">Tailored Wool Coat</text>
+    <text x="80" y="340" font-family="'Inter', sans-serif" font-weight="700" font-size="12" fill="#DDD">$340 · Shop Now ➔</text>
+
+    <!-- Grid Column Right -->
+    <rect x="440" y="95" width="200" height="135" rx="12" fill="#DED6C7"/>
+    <text x="540" y="170" font-family="'Outfit', sans-serif" font-weight="900" font-size="44" fill="#FFF" text-anchor="middle">👜</text>
+    <text x="455" y="215" font-family="'Outfit', sans-serif" font-weight="800" font-size="12" fill="#1A130E">Monogram Tote · $180</text>
+
+    <rect x="440" y="245" width="200" height="140" rx="12" fill="#D4CAC0"/>
+    <text x="540" y="315" font-family="'Outfit', sans-serif" font-weight="900" font-size="44" fill="#FFF" text-anchor="middle">👠</text>
+    <text x="455" y="365" font-family="'Outfit', sans-serif" font-weight="800" font-size="12" fill="#1A130E">Minimalist Stiletto · $210</text>
+  </g>
+</svg>

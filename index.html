@@ -1,0 +1,1825 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mohith Gowd Maridhu — Creative Web Designer, Frontend Developer &amp; AI Creator</title>
+  <meta name="description" content="Personal portfolio of Mohith Gowd Maridhu — Creative Web Designer, Frontend Developer, UI/UX Enthusiast, AI-Powered Digital Creator &amp; 2nd Year AI &amp; DS Student at Ramachandra College of Engineering (Autonomous), Eluru.">
+  <meta name="author" content="Mohith Gowd Maridhu">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='50' fill='%23FF9D00'/><text x='50%' y='55%' text-anchor='middle' dominant-baseline='middle' font-family='sans-serif' font-weight='900' font-size='56' fill='%230F0D0B'>M</text></svg>">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="light">
+
+  <!-- ========================================================
+       SECTION 01: NAVIGATION HEADER
+       ======================================================== -->
+  <header class="header-container" id="mainHeader">
+    <nav class="nav-bar">
+      <!-- Logo -->
+      <a href="#home" class="nav-brand" aria-label="Mohith Gowd Homepage">
+        <span class="logo-circle">M</span>
+        <span class="logo-text">Mohith<span class="brand-dot">.</span></span>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#toolkit" class="nav-link">Toolkit</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#journey" class="nav-link">Journey</a></li>
+        <li><a href="#achievements" class="nav-link">Achievements</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <!-- Nav Actions (Theme toggle & Let's Talk CTA) -->
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light theme" title="Toggle theme">
+          <svg class="theme-icon moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+          <svg class="theme-icon sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"/>
+            <line x1="12" y1="1" x2="12" y2="3"/>
+            <line x1="12" y1="21" x2="12" y2="23"/>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+            <line x1="1" y1="12" x2="3" y2="12"/>
+            <line x1="21" y1="12" x2="23" y2="12"/>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+          </svg>
+        </button>
+
+        <a href="#contact" class="btn-talk">
+          <span>Let's Talk</span>
+          <span class="btn-arrow">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+          </span>
+        </a>
+
+        <!-- Mobile Hamburger Button -->
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile Navigation Backdrop Overlay -->
+    <div class="mobile-drawer-backdrop" id="mobileDrawerBackdrop" aria-hidden="true"></div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-drawer" id="mobileDrawer" role="dialog" aria-modal="true" aria-label="Mobile Navigation Menu">
+      <ul class="mobile-nav-links">
+        <li><a href="#home" class="mobile-link">Home</a></li>
+        <li><a href="#about" class="mobile-link">About</a></li>
+        <li><a href="#services" class="mobile-link">Services</a></li>
+        <li><a href="#skills" class="mobile-link">Skills</a></li>
+        <li><a href="#toolkit" class="mobile-link">Toolkit</a></li>
+        <li><a href="#projects" class="mobile-link">Projects</a></li>
+        <li><a href="#journey" class="mobile-link">Journey</a></li>
+        <li><a href="#achievements" class="mobile-link">Achievements</a></li>
+        <li><a href="#contact" class="mobile-link mobile-cta-link">Let's Talk ↗</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <!-- ========================================================
+         SECTION 02: HERO / HOME
+         ======================================================== -->
+    <section class="hero-section" id="home">
+      <div class="container hero-container">
+        
+        <!-- Left Hero Content Column -->
+        <div class="hero-content">
+          <!-- Top Tag Badge -->
+          <div class="hero-badge reveal">
+            <span class="badge-dot"></span>
+            <span class="badge-text">B.Tech 2nd Year · AI &amp; Data Science</span>
+          </div>
+
+          <!-- Main Heading -->
+          <h1 class="hero-title reveal">
+            I'm <span class="highlight-orange">Mohith Gowd</span> Maridhu<span class="sparkle">✦</span>
+          </h1>
+
+          <p class="hero-subtitle reveal">
+            Creative Web Designer | Frontend Developer | UI/UX Enthusiast | AI-Powered Digital Creator | Video Editor
+          </p>
+
+          <p class="hero-tagline reveal">
+            “Turning Creative Ideas Into Meaningful Digital Experiences.”
+          </p>
+
+          <p class="hero-description reveal">
+            Second-year Artificial Intelligence &amp; Data Science student at Ramachandra College of Engineering (Autonomous), Eluru. I combine creative design, modern web development, and AI tools to craft intuitive, interactive digital products.
+          </p>
+
+          <!-- Follow Me Social Links with Authentic User URLs -->
+          <div class="hero-socials reveal">
+            <span class="social-label">Connect:</span>
+            <div class="social-icons">
+              <a href="https://github.com/mohithgowd8/" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="GitHub Profile" title="GitHub: mohithgowd8">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/></svg>
+              </a>
+              <a href="https://www.linkedin.com/in/mohithgowd-maridhu-1380763ba/" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn Profile" title="LinkedIn: Mohith Gowd Maridhu">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.64 1.64 0 1 0 0-3.28 1.64 1.64 0 0 0 0 3.28m1.4 9.74V9.97H5.06v8.53z"/></svg>
+              </a>
+              <a href="https://www.instagram.com/mohith_gowd_maridhu/?utm_source=ig_web_button_share_sheet" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Instagram Profile" title="Instagram: @mohith_gowd_maridhu">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+              </a>
+              <a href="https://youtube.com/@buildwithmohith?si=613WlWeRdh5jbqO6" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="YouTube Channel" title="YouTube: @buildwithmohith">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+              </a>
+              <a href="mailto:maridhumohithgowd630@gmail.com" class="social-btn" aria-label="Email Mohith" title="Email: maridhumohithgowd630@gmail.com">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Academic Affiliation Card -->
+          <div class="hero-rating reveal">
+            <div class="avatar-stack">
+              <span class="avatar av-1">💡</span>
+              <span class="avatar av-2">💻</span>
+              <span class="avatar av-3">🎨</span>
+              <span class="avatar av-4">⚡</span>
+            </div>
+            <div class="rating-info">
+              <span class="rating-stars">Ramachandra College of Engineering (Autonomous)</span>
+              <span class="rating-desc">Department of Artificial Intelligence &amp; Data Science (AI &amp; DS)</span>
+            </div>
+          </div>
+
+          <!-- CTA Buttons -->
+          <div class="hero-actions reveal">
+            <a href="#projects" class="btn-orange">
+              <span>Explore Projects</span>
+              <span class="btn-arrow-circle">➔</span>
+            </a>
+            <button type="button" class="btn-white resume-action-btn" id="heroResumeBtn" aria-label="Resume Information" title="Resume being updated">
+              <span>Download Resume</span>
+              <span class="btn-arrow-circle">↓</span>
+            </button>
+            <a href="#contact" class="btn-talk">
+              <span>Contact Me</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Hero Visual Column (Mohith's Authentic Portrait & Floating Badges) -->
+        <div class="hero-visual reveal">
+          <!-- Background Curved Backdrop -->
+          <div class="hero-backdrop"></div>
+
+          <!-- Rotating Circular Stamp Badge -->
+          <div class="rotating-stamp">
+            <svg viewBox="0 0 140 140" class="stamp-svg">
+              <path id="stampPath" d="M 70, 70 m -50, 0 a 50,50 0 1,1 100,0 a 50,50 0 1,1 -100,0" fill="none"/>
+              <text font-family="'Outfit', sans-serif" font-size="10.5" font-weight="800" fill="currentColor" letter-spacing="2.2">
+                <textPath href="#stampPath">
+                  ✦ MOHITH GOWD ✦ DIGITAL CREATOR ✦
+                </textPath>
+              </text>
+            </svg>
+            <div class="stamp-center">
+              <span>⚡</span>
+            </div>
+          </div>
+
+          <!-- Floating Skill Pills -->
+          <div class="floating-pill pill-top-left">
+            <span class="pill-dot orange"></span> Frontend Dev
+          </div>
+          <div class="floating-pill pill-top-right">
+            <span class="pill-dot"></span> UI/UX Design
+          </div>
+          <div class="floating-pill pill-mid-right">
+            <span class="pill-dot orange"></span> AI Workflows
+          </div>
+          <div class="floating-pill pill-mid-left">
+            <span class="pill-dot"></span> Video Editing
+          </div>
+          <div class="floating-pill pill-bot-right">
+            <span class="pill-dot orange"></span> Web Creator
+          </div>
+
+          <!-- Quote Box -->
+          <div class="quote-card">
+            <span class="quote-mark">“</span>
+            <p>Turning Creative Ideas Into Meaningful Digital Experiences.</p>
+          </div>
+
+          <!-- Mohith's Authentic Original Photograph (Never Replaced) -->
+          <div class="hero-photo-wrapper">
+            <img src="assets/images/mohith-photo.jpg" alt="Mohith Gowd Maridhu - Creative Web Designer, Frontend Developer &amp; AI Creator" class="hero-photo" loading="eager">
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Horizontal Dark Scrolling Marquee Ticker -->
+      <div class="hero-ticker">
+        <div class="ticker-track">
+          <span class="ticker-item">Website Design <span class="t-star">✦</span></span>
+          <span class="ticker-item">Frontend Development <span class="t-star">✦</span></span>
+          <span class="ticker-item">UI/UX Design <span class="t-star">✦</span></span>
+          <span class="ticker-item">AI Tools &amp; Prompting <span class="t-star">✦</span></span>
+          <span class="ticker-item">Video Editing <span class="t-star">✦</span></span>
+          <span class="ticker-item">Landing Page Creation <span class="t-star">✦</span></span>
+          <span class="ticker-item">Poster &amp; Graphic Design <span class="t-star">✦</span></span>
+          <span class="ticker-item">Responsive Web <span class="t-star">✦</span></span>
+          <!-- Seamless loop repeat -->
+          <span class="ticker-item">Website Design <span class="t-star">✦</span></span>
+          <span class="ticker-item">Frontend Development <span class="t-star">✦</span></span>
+          <span class="ticker-item">UI/UX Design <span class="t-star">✦</span></span>
+          <span class="ticker-item">AI Tools &amp; Prompting <span class="t-star">✦</span></span>
+          <span class="ticker-item">Video Editing <span class="t-star">✦</span></span>
+          <span class="ticker-item">Landing Page Creation <span class="t-star">✦</span></span>
+          <span class="ticker-item">Poster &amp; Graphic Design <span class="t-star">✦</span></span>
+          <span class="ticker-item">Responsive Web <span class="t-star">✦</span></span>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ========================================================
+         SECTION 03: SERVICES I OFFER
+         ======================================================== -->
+    <section class="services-section" id="services">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header-row">
+          <div>
+            <div class="section-tag reveal">
+              <span class="tag-dots"><span></span><span></span></span>
+              <span>Services I Offer</span>
+            </div>
+            <h2 class="section-title reveal">
+              How I Bring <span class="highlight-orange">Ideas to Life</span><span class="sparkle">✦</span>
+            </h2>
+          </div>
+          <div class="section-action-btn reveal">
+            <a href="#contact" class="btn-orange-outline">
+              <span>Discuss a Project</span>
+              <span class="btn-arrow-circle">➔</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Services Accordion Cards -->
+        <div class="services-accordion" id="servicesAccordion">
+
+          <!-- Card 01: Website Design (Default Open) -->
+          <div class="service-card active reveal" data-service="01">
+            <div class="service-card-header">
+              <div class="service-card-title-group">
+                <span class="service-number">01.</span>
+                <h3 class="service-name">Website Design</h3>
+              </div>
+              <button class="service-toggle-btn" aria-label="Toggle Website Design details">
+                <span class="toggle-icon">✕</span>
+              </button>
+            </div>
+            <div class="service-card-body">
+              <div class="service-tags">
+                <span class="serv-tag">Modern Web Layouts</span>
+                <span class="serv-tag">Visual Hierarchy</span>
+                <span class="serv-tag">Typography Styling</span>
+                <span class="serv-tag">Responsive Grids</span>
+              </div>
+              <p class="service-description">
+                Designing visually refined, purposeful website layouts tailored to highlight content effectively. Balancing warm palettes, clean whitespace, and modern aesthetic structures across all screen resolutions.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 02: Frontend Website Development -->
+          <div class="service-card reveal" data-service="02">
+            <div class="service-card-header">
+              <div class="service-card-title-group">
+                <span class="service-number">02.</span>
+                <h3 class="service-name">Frontend Website Development</h3>
+              </div>
+              <button class="service-toggle-btn" aria-label="Toggle Frontend Development details">
+                <span class="toggle-icon">↗</span>
+              </button>
+            </div>
+            <div class="service-card-body">
+              <div class="service-tags">
+                <span class="serv-tag">Semantic HTML5</span>
+                <span class="serv-tag">Modern CSS3 &amp; Flex/Grid</span>
+                <span class="serv-tag">Vanilla JavaScript</span>
+                <span class="serv-tag">Interactive Components</span>
+              </div>
+              <p class="service-description">
+                Translating UI concepts into responsive, high-performance web code. Crafting interactive components, accessible navigation, smooth animations, and clean stylesheets without bloat.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 03: UI/UX Design -->
+          <div class="service-card reveal" data-service="03">
+            <div class="service-card-header">
+              <div class="service-card-title-group">
+                <span class="service-number">03.</span>
+                <h3 class="service-name">UI/UX Design</h3>
+              </div>
+              <button class="service-toggle-btn" aria-label="Toggle UI/UX Design details">
+                <span class="toggle-icon">↗</span>
+              </button>
+            </div>
+            <div class="service-card-body">
+              <div class="service-tags">
+                <span class="serv-tag">User Flow Mapping</span>
+                <span class="serv-tag">Wireframing</span>
+                <span class="serv-tag">Interactive Prototyping</span>
+                <span class="serv-tag">Component Systems</span>
+              </div>
+              <p class="service-description">
+                Building user-friendly interfaces that prioritize clarity and ease of navigation. Focusing on intuitive pathways, frictionless workflows, and cohesive visual component design.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 04: Landing Page Creation -->
+          <div class="service-card reveal" data-service="04">
+            <div class="service-card-header">
+              <div class="service-card-title-group">
+                <span class="service-number">04.</span>
+                <h3 class="service-name">Landing Page Creation</h3>
+              </div>
+              <button class="service-toggle-btn" aria-label="Toggle Landing Page Creation details">
+                <span class="toggle-icon">↗</span>
+              </button>
+            </div>
+            <div class="service-card-body">
+              <div class="service-tags">
+                <span class="serv-tag">High-Impact Hero Sections</span>
+                <span class="serv-tag">Call to Actions</span>
+                <span class="serv-tag">Feature Showcases</span>
+                <span class="serv-tag">Fast Loading</span>
+              </div>
+              <p class="service-description">
+                Creating conversion-focused, eye-catching landing pages for events, products, and portfolio showcases that capture attention immediately and communicate value clearly.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 05: Creative Poster Design -->
+          <div class="service-card reveal" data-service="05">
+            <div class="service-card-header">
+              <div class="service-card-title-group">
+                <span class="service-number">05.</span>
+                <h3 class="service-name">Creative Poster Design</h3>
+              </div>
+              <button class="service-toggle-btn" aria-label="Toggle Poster Design details">
+                <span class="toggle-icon">↗</span>
+              </button>
+            </div>
+            <div class="service-card-body">
+              <div class="service-tags">
+                <span class="serv-tag">Event Posters</span>
+                <span class="serv-tag">Digital Promotional Banners</span>
+                <span class="serv-tag">Typography Composition</span>
+                <span class="serv-tag">Visual Storytelling</span>
+              </div>
+              <p class="service-description">
+                Designing bold, creative posters for college technical symposiums, hackathons, cultural fests, and digital media promotions using Canva, Photoshop, and digital illustration tools.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 06: Video Editing -->
+          <div class="service-card reveal" data-service="06">
+            <div class="service-card-header">
+              <div class="service-card-title-group">
+                <span class="service-number">06.</span>
+                <h3 class="service-name">Video Editing</h3>
+              </div>
+              <button class="service-toggle-btn" aria-label="Toggle Video Editing details">
+                <span class="toggle-icon">↗</span>
+              </button>
+            </div>
+            <div class="service-card-body">
+              <div class="service-tags">
+                <span class="serv-tag">Cinematic Video Creation</span>
+                <span class="serv-tag">Reel &amp; Shorts Editing</span>
+                <span class="serv-tag">Sound Synchronization</span>
+                <span class="serv-tag">Motion &amp; Pacing</span>
+              </div>
+              <p class="service-description">
+                Editing engaging, dynamic video content including promotional videos, social media reels, and event recaps with rhythmic cutting, sound balancing, and tasteful visual transitions.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 07: Photo Editing -->
+          <div class="service-card reveal" data-service="07">
+            <div class="service-card-header">
+              <div class="service-card-title-group">
+                <span class="service-number">07.</span>
+                <h3 class="service-name">Photo Editing</h3>
+              </div>
+              <button class="service-toggle-btn" aria-label="Toggle Photo Editing details">
+                <span class="toggle-icon">↗</span>
+              </button>
+            </div>
+            <div class="service-card-body">
+              <div class="service-tags">
+                <span class="serv-tag">Color Grading</span>
+                <span class="serv-tag">Image Retouching</span>
+                <span class="serv-tag">Creative Compositing</span>
+                <span class="serv-tag">Digital Asset Prep</span>
+              </div>
+              <p class="service-description">
+                Enhancing photographs, balancing color tones, retouching lighting, and creating composite visual assets for websites, social channels, and event branding.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 08: AI-Assisted Creative Work -->
+          <div class="service-card reveal" data-service="08">
+            <div class="service-card-header">
+              <div class="service-card-title-group">
+                <span class="service-number">08.</span>
+                <h3 class="service-name">AI-Assisted Creative Work</h3>
+              </div>
+              <button class="service-toggle-btn" aria-label="Toggle AI-Assisted Work details">
+                <span class="toggle-icon">↗</span>
+              </button>
+            </div>
+            <div class="service-card-body">
+              <div class="service-tags">
+                <span class="serv-tag">Prompt Engineering</span>
+                <span class="serv-tag">AI Video Creation</span>
+                <span class="serv-tag">Computer Vision / MediaPipe</span>
+                <span class="serv-tag">Workflow Acceleration</span>
+              </div>
+              <p class="service-description">
+                Harnessing AI tools like Google Gemini, ChatGPT, Claude, and vision libraries to accelerate ideation, script creative workflows, generate assets, and build intelligent interactive prototypes.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+  </section>
+
+
+    <!-- ========================================================
+         SECTION 04: ABOUT ME (COLLAPSIBLE ON MOBILE)
+         ======================================================== -->
+    <section class="about-section dark-section" id="about">
+      <div class="container">
+        
+        <!-- Mobile Collapsible Side-Panel Trigger -->
+        <button class="mobile-section-toggle" id="aboutToggleBtn" type="button" aria-expanded="false" aria-controls="aboutCollapseContent">
+          <div class="toggle-bar-left">
+            <span class="toggle-badge">✦ About Me</span>
+            <span class="toggle-title">Who is Mohith Gowd Maridhu?</span>
+          </div>
+          <span class="toggle-icon-pill">
+            <span class="toggle-icon-text">View Bio</span>
+            <span class="toggle-icon-arrow" aria-hidden="true">▼</span>
+          </span>
+        </button>
+
+        <div class="about-collapse-wrapper" id="aboutCollapseContent">
+          <div class="about-container">
+            
+            <!-- Left Column: Orange Container with Mohith's Authentic Photo -->
+            <div class="about-visual reveal">
+              <div class="about-orange-card">
+                <div class="about-pattern-overlay"></div>
+                <img src="assets/images/mohith-photo.jpg" alt="Mohith Gowd Maridhu Portrait" class="about-photo">
+                
+                <!-- Skill pills floating over photo container -->
+                <div class="about-pill pill-ab-1">Frontend Development</div>
+                <div class="about-pill pill-ab-2">UI/UX Design</div>
+                <div class="about-pill pill-ab-3">AI &amp; Data Science</div>
+                <div class="about-pill pill-ab-4">Video Editing</div>
+                <div class="about-pill pill-ab-5">Creative Tech</div>
+                <div class="about-pill pill-ab-6">Hackathons</div>
+              </div>
+            </div>
+
+            <!-- Right Column: Narrative & Info -->
+            <div class="about-content">
+              <div class="section-tag dark reveal">
+                <span class="tag-dots"><span></span><span></span></span>
+                <span>About Me</span>
+              </div>
+
+              <h2 class="section-title dark reveal">
+                Who is <span class="highlight-orange">Mohith Gowd Maridhu</span>?<span class="sparkle">✦</span>
+              </h2>
+
+              <p class="about-bio reveal">
+                Hello! I'm <strong>Mohith Gowd Maridhu</strong> — a creative web designer, frontend developer, and digital creator passionate about turning creative ideas into meaningful, functional digital experiences.
+              </p>
+
+              <p class="about-education reveal">
+                Currently studying in my <strong>Second Year of B.Tech</strong> in <strong>Artificial Intelligence and Data Science (AI &amp; DS)</strong> at <strong>Ramachandra College of Engineering (Autonomous), Eluru, Andhra Pradesh</strong>.
+              </p>
+
+              <p class="about-philosophy reveal">
+                I enjoy connecting the dots between aesthetic visual design, frontend code, and modern artificial intelligence tools. Rather than seeing creativity and technology as opposites, I leverage both to build websites that look engaging, run smoothly, and solve genuine real-world challenges.
+              </p>
+
+              <!-- What I Enjoy Most List -->
+              <div class="about-interests reveal">
+                <h4 class="interests-title">What I Genuinely Enjoy:</h4>
+                <ul class="interests-list">
+                  <li>✦ Creating responsive, modern websites and landing pages</li>
+                  <li>✦ Designing clean user interfaces &amp; intuitive UX flows</li>
+                  <li>✦ Exploring AI tools and integrating AI workflows into development</li>
+                  <li>✦ Developing creative digital experiences and visual storytelling</li>
+                  <li>✦ Video editing, cinematic pacing, and photo editing</li>
+                  <li>✦ Building interactive prototypes to test real-world ideas</li>
+                  <li>✦ Learning emerging frontend and AI technologies</li>
+                  <li>✦ Working with teams on hackathons and innovative ideas</li>
+                </ul>
+              </div>
+
+              <!-- Skill Badges Grid -->
+              <div class="about-skills-grid reveal">
+                <span class="about-skill-item">✦ Responsive Web</span>
+                <span class="about-skill-item">✦ UI/UX Design</span>
+                <span class="about-skill-item">✦ AI Workflows</span>
+                <span class="about-skill-item">✦ Video Editing</span>
+                <span class="about-skill-item">✦ Graphic Design</span>
+                <span class="about-skill-item">✦ Team Collaboration</span>
+              </div>
+
+              <!-- Bottom Action Row: Stylish Text Sign-off & CV Button -->
+              <div class="about-actions reveal">
+                <button type="button" class="btn-orange resume-action-btn" id="aboutResumeBtn" aria-label="CV Status">
+                  <span>Download CV</span>
+                  <span class="btn-arrow-circle">↓</span>
+                </button>
+                
+                <!-- Clean AI & Design Matched Text Sign-off (Replaces image) -->
+                <div class="about-signoff-box">
+                  <p class="signoff-quote">“Driven by curiosity, powered by logic, and shaped by creative AI workflows.”</p>
+                  <div class="signoff-signature-text">Mohith Gowd Maridhu</div>
+                  <span class="signoff-badge">✦ Creative Developer &amp; AI &amp; DS Student</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ========================================================
+         SECTION 05: JOURNEY HIGHLIGHTS & MILESTONES
+         ======================================================== -->
+    <section class="stats-section dark-section">
+      <div class="container stats-container">
+        
+        <div class="stat-card reveal">
+          <div class="stat-number-wrapper">
+            <span class="stat-number" data-target="8">8</span><span class="stat-plus">+</span>
+          </div>
+          <p class="stat-label">Genuine Projects &amp; Prototypes</p>
+        </div>
+
+        <div class="stat-divider"></div>
+
+        <div class="stat-card reveal">
+          <div class="stat-number-wrapper">
+            <span class="stat-number" data-target="3">3</span><span class="stat-text">rd Prize</span>
+          </div>
+          <p class="stat-label">Rashtriya Innovation Challenge 2026</p>
+        </div>
+
+        <div class="stat-divider"></div>
+
+        <div class="stat-card reveal">
+          <div class="stat-number-wrapper">
+            <span class="stat-text highlight-orange" style="font-size:2.2rem; font-weight:800;">Winner</span>
+          </div>
+          <p class="stat-label">OPTI FORGE'26 AI Hackathon</p>
+        </div>
+
+        <div class="stat-divider"></div>
+
+        <div class="stat-card reveal">
+          <div class="stat-number-wrapper">
+            <span class="stat-text highlight-orange" style="font-size:2.2rem; font-weight:800;">2nd Year</span>
+          </div>
+          <p class="stat-label">B.Tech AI &amp; Data Science (RCE)</p>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ========================================================
+         SECTION 06: MY SKILLS
+         ======================================================== -->
+    <section class="skills-section" id="skills">
+      <div class="container">
+        <div class="section-center-header">
+          <div class="section-tag reveal">
+            <span class="tag-dots"><span></span><span></span></span>
+            <span>My Genuine Skills</span>
+          </div>
+          <h2 class="section-title reveal">
+            Organized <span class="highlight-orange">Skills &amp; Capabilities</span><span class="sparkle">✦</span>
+          </h2>
+          <p class="section-subtext reveal">
+            Grounded in authentic learning, hands-on project creation, and team collaboration.
+          </p>
+        </div>
+
+        <!-- Skills Category Grid -->
+        <div class="skills-categories-grid">
+
+          <!-- Category 1: Website & Frontend -->
+          <div class="skill-category-card reveal" tabindex="0" role="button" aria-expanded="false">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon orange-bg">🌐</div>
+              <div class="skill-cat-text">
+                <h3 class="skill-cat-title">Website &amp; Frontend</h3>
+                <span class="skill-cat-subtitle">Web Design &amp; Development</span>
+              </div>
+              <span class="skill-cat-toggle-indicator" aria-hidden="true">+</span>
+            </div>
+            <div class="skill-pills-list">
+              <span class="skill-pill">HTML5</span>
+              <span class="skill-pill">CSS3</span>
+              <span class="skill-pill">JavaScript</span>
+              <span class="skill-pill">Frontend Development</span>
+              <span class="skill-pill">Website Creation</span>
+              <span class="skill-pill">Responsive Web Design</span>
+              <span class="skill-pill">Landing Page Design</span>
+              <span class="skill-pill">UI/UX Design</span>
+              <span class="skill-pill">Website Deployment</span>
+            </div>
+          </div>
+
+          <!-- Category 2: AI Tools & Productivity -->
+          <div class="skill-category-card reveal" tabindex="0" role="button" aria-expanded="false">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon dark-bg">🤖</div>
+              <div class="skill-cat-text">
+                <h3 class="skill-cat-title">AI Tools &amp; Productivity</h3>
+                <span class="skill-cat-subtitle">AI-Driven Workflows</span>
+              </div>
+              <span class="skill-cat-toggle-indicator" aria-hidden="true">+</span>
+            </div>
+            <div class="skill-pills-list">
+              <span class="skill-pill">ChatGPT</span>
+              <span class="skill-pill">Google Gemini</span>
+              <span class="skill-pill">Claude</span>
+              <span class="skill-pill">Microsoft Tools</span>
+              <span class="skill-pill">AI-Assisted Website Development</span>
+              <span class="skill-pill">Prompt Engineering</span>
+              <span class="skill-pill">AI-Based Creative Workflows</span>
+              <span class="skill-pill">AI Video Creation</span>
+            </div>
+          </div>
+
+          <!-- Category 3: Creative Skills -->
+          <div class="skill-category-card reveal" tabindex="0" role="button" aria-expanded="false">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon orange-bg">🎬</div>
+              <div class="skill-cat-text">
+                <h3 class="skill-cat-title">Creative Skills</h3>
+                <span class="skill-cat-subtitle">Media &amp; Visual Design</span>
+              </div>
+              <span class="skill-cat-toggle-indicator" aria-hidden="true">+</span>
+            </div>
+            <div class="skill-pills-list">
+              <span class="skill-pill">Video Editing</span>
+              <span class="skill-pill">Photo Editing</span>
+              <span class="skill-pill">Cinematic Video Creation</span>
+              <span class="skill-pill">Reel Creation</span>
+              <span class="skill-pill">Poster Design</span>
+              <span class="skill-pill">Graphic Design</span>
+              <span class="skill-pill">Visual Storytelling</span>
+              <span class="skill-pill">Creative Website Design</span>
+            </div>
+          </div>
+
+          <!-- Category 4: Digital & Social Media -->
+          <div class="skill-category-card reveal" tabindex="0" role="button" aria-expanded="false">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon dark-bg">📱</div>
+              <div class="skill-cat-text">
+                <h3 class="skill-cat-title">Digital &amp; Social Media</h3>
+                <span class="skill-cat-subtitle">Content &amp; Presence</span>
+              </div>
+              <span class="skill-cat-toggle-indicator" aria-hidden="true">+</span>
+            </div>
+            <div class="skill-pills-list">
+              <span class="skill-pill">LinkedIn Content Creation</span>
+              <span class="skill-pill">Social Media Management</span>
+              <span class="skill-pill">YouTube Content Creation</span>
+              <span class="skill-pill">Instagram Content Creation</span>
+              <span class="skill-pill">Digital Branding</span>
+            </div>
+          </div>
+
+          <!-- Category 5: Professional Skills (Spans wide or centered) -->
+          <div class="skill-category-card full-width-card reveal" tabindex="0" role="button" aria-expanded="false">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon orange-bg">🤝</div>
+              <div class="skill-cat-text">
+                <h3 class="skill-cat-title">Professional Skills</h3>
+                <span class="skill-cat-subtitle">Teamwork &amp; Leadership</span>
+              </div>
+              <span class="skill-cat-toggle-indicator" aria-hidden="true">+</span>
+            </div>
+            <div class="skill-pills-list">
+              <span class="skill-pill highlight">Leadership</span>
+              <span class="skill-pill highlight">Teamwork</span>
+              <span class="skill-pill highlight">Team Collaboration</span>
+              <span class="skill-pill highlight">Communication</span>
+              <span class="skill-pill highlight">Creative Thinking</span>
+              <span class="skill-pill highlight">Problem Solving</span>
+              <span class="skill-pill highlight">Project Coordination</span>
+              <span class="skill-pill highlight">Adaptability</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+  </section>
+
+
+    <!-- ========================================================
+         SECTION 07: MY DIGITAL CREATIVE TOOLKIT
+         ======================================================== -->
+    <section class="tools-section" id="toolkit">
+      <div class="container">
+        <div class="section-center-header">
+          <div class="section-tag reveal">
+            <span class="tag-dots"><span></span><span></span></span>
+            <span>Digital Creative Toolkit</span>
+          </div>
+          <h2 class="section-title reveal">
+            My Digital <span class="highlight-orange">Creative Toolkit</span><span class="sparkle">✦</span>
+          </h2>
+          <p class="section-subtext reveal">
+            The genuine software, AI engines, and developer platforms powering my daily design, coding, and content workflows.
+          </p>
+        </div>
+
+        <!-- 8 Tools Grid (4 columns on desktop, logos-first interactive on mobile) -->
+        <div class="tools-grid toolkit-grid">
+
+          <!-- Tool 01: ChatGPT -->
+          <div class="tool-card reveal" tabindex="0" role="button" aria-expanded="false">
+            <div class="tool-card-top">
+              <div class="tool-icon-wrapper">
+                <img src="assets/icons/chatgpt.svg" alt="ChatGPT Icon" class="tool-icon">
+              </div>
+              <span class="toolkit-badge">AI Assistant</span>
+            </div>
+            <h3 class="tool-name">ChatGPT</h3>
+            <div class="tool-details-box">
+              <p class="tool-category">Prompt Engineering &amp; Logic Prototyping</p>
+              <p class="tool-usage">Used for ideation, drafting content architectures, structuring code snippets, and solving algorithmic challenges.</p>
+            </div>
+            <div class="tool-bottom-accent"></div>
+          </div>
+
+          <!-- Tool 02: Google Gemini -->
+          <div class="tool-card reveal" tabindex="0" role="button" aria-expanded="false">
+            <div class="tool-card-top">
+              <div class="tool-icon-wrapper">
+                <img src="assets/icons/gemini.svg" alt="Google Gemini Icon" class="tool-icon">
+              </div>
+              <span class="toolkit-badge">Multimodal AI</span>
+            </div>
+            <h3 class="tool-name">Google Gemini</h3>
+            <div class="tool-details-box">
+              <p class="tool-category">Research &amp; Multimodal AI Workflows</p>
+              <p class="tool-usage">Powers rapid research, technical documentation synthesis, multimodal media analysis, and full-stack API integration.</p>
+            </div>
+            <div class="tool-bottom-accent"></div>
+          </div>
+
+          <!-- Tool 03: Claude -->
+          <div class="tool-card reveal" tabindex="0" role="button" aria-expanded="false">
+            <div class="tool-card-top">
+              <div class="tool-icon-wrapper">
+                <img src="assets/icons/claude.svg" alt="Claude Icon" class="tool-icon">
+              </div>
+              <span class="toolkit-badge">Reasoning</span>
+            </div>
+            <h3 class="tool-name">Claude</h3>
+            <div class="tool-details-box">
+              <p class="tool-category">Complex Reasoning &amp; Code Architecture</p>
+              <p class="tool-usage">Used for in-depth system architecture design, code review, precise UI refactoring, and structured writing.</p>
+            </div>
+            <div class="tool-bottom-accent"></div>
+          </div>
+
+          <!-- Tool 04: Microsoft Tools -->
+          <div class="tool-card reveal" tabindex="0" role="button" aria-expanded="false">
+            <div class="tool-card-top">
+              <div class="tool-icon-wrapper">
+                <img src="assets/icons/microsoft.svg" alt="Microsoft Tools Icon" class="tool-icon">
+              </div>
+              <span class="toolkit-badge">Productivity</span>
+            </div>
+            <h3 class="tool-name">Microsoft Tools</h3>
+            <div class="tool-details-box">
+              <p class="tool-category">Office, Word, PowerPoint &amp; Excel</p>
+              <p class="tool-usage">Essential for technical presentations, hackathon documentation, data spreadsheets, and project pitch decks.</p>
+            </div>
+            <div class="tool-bottom-accent"></div>
+          </div>
+
+          <!-- Tool 05: Canva -->
+          <div class="tool-card reveal" tabindex="0" role="button" aria-expanded="false">
+            <div class="tool-card-top">
+              <div class="tool-icon-wrapper">
+                <img src="assets/icons/canva.svg" alt="Canva Icon" class="tool-icon">
+              </div>
+              <span class="toolkit-badge">Creative Design</span>
+            </div>
+            <h3 class="tool-name">Canva</h3>
+            <div class="tool-details-box">
+              <p class="tool-category">Poster Design &amp; Digital Graphics</p>
+              <p class="tool-usage">Creating high-engagement event posters, YouTube thumbnails, social carousels, and digital branding assets.</p>
+            </div>
+            <div class="tool-bottom-accent"></div>
+          </div>
+
+          <!-- Tool 06: GitHub -->
+          <div class="tool-card reveal" tabindex="0" role="button" aria-expanded="false">
+            <div class="tool-card-top">
+              <div class="tool-icon-wrapper">
+                <img src="assets/icons/github.svg" alt="GitHub Icon" class="tool-icon">
+              </div>
+              <span class="toolkit-badge">Version Control</span>
+            </div>
+            <h3 class="tool-name">GitHub</h3>
+            <div class="tool-details-box">
+              <p class="tool-category">Code Hosting &amp; Collaboration</p>
+              <p class="tool-usage">Managing source code repositories, open-source version tracking, collaboration with teammates, and web deployments.</p>
+            </div>
+            <div class="tool-bottom-accent"></div>
+          </div>
+
+          <!-- Tool 07: VS Code -->
+          <div class="tool-card reveal" tabindex="0" role="button" aria-expanded="false">
+            <div class="tool-card-top">
+              <div class="tool-icon-wrapper">
+                <img src="assets/icons/vscode.svg" alt="Visual Studio Code Icon" class="tool-icon">
+              </div>
+              <span class="toolkit-badge">Primary IDE</span>
+            </div>
+            <h3 class="tool-name">Visual Studio Code</h3>
+            <div class="tool-details-box">
+              <p class="tool-category">Frontend &amp; AI Scripting</p>
+              <p class="tool-usage">Primary development environment for crafting semantic HTML, responsive CSS, JavaScript, and testing web applications.</p>
+            </div>
+            <div class="tool-bottom-accent"></div>
+          </div>
+
+          <!-- Tool 08: Replit -->
+          <div class="tool-card reveal" tabindex="0" role="button" aria-expanded="false">
+            <div class="tool-card-top">
+              <div class="tool-icon-wrapper">
+                <img src="assets/icons/replit.svg" alt="Replit Icon" class="tool-icon">
+              </div>
+              <span class="toolkit-badge">Cloud Sandbox</span>
+            </div>
+            <h3 class="tool-name">Replit</h3>
+            <div class="tool-details-box">
+              <p class="tool-category">Rapid Prototyping &amp; Live Testing</p>
+              <p class="tool-usage">Used for instant sandbox experiments, running quick API tests, and collaborating live during hackathon sessions.</p>
+            </div>
+            <div class="tool-bottom-accent"></div>
+          </div>
+
+        </div>
+      </div>
+  </section>
+
+
+    <!-- ========================================================
+         SECTION 08: MY PORTFOLIO / PROJECTS (CLEAN, NO SAMPLE IMAGES)
+         ======================================================== -->
+    <section class="portfolio-section dark-section" id="projects">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header-row">
+          <div>
+            <div class="section-tag dark reveal">
+              <span class="tag-dots"><span></span><span></span></span>
+              <span>Genuine Projects</span>
+            </div>
+            <h2 class="section-title dark reveal">
+              Featured <span class="highlight-orange">Projects &amp; Prototypes</span><span class="sparkle">✦</span>
+            </h2>
+            <p class="section-subtext light reveal">
+              Accurate, verified web development, AI hackathon solutions, and student prototypes with full descriptions.
+            </p>
+          </div>
+          <div class="section-action-btn reveal">
+            <a href="https://github.com/mohithgowd8/" target="_blank" rel="noopener noreferrer" class="btn-orange">
+              <span>Visit My GitHub</span>
+              <span class="btn-arrow-circle">↗</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Mobile GitHub Projects Navigation Card -->
+        <div class="mobile-github-banner reveal">
+          <div class="github-banner-info">
+            <span class="github-banner-tag">GitHub Portfolio</span>
+            <h3 class="github-banner-title">My Projects — Visit on GitHub</h3>
+            <p class="github-banner-desc">Explore verified repositories, hackathon code, and active frontend web applications.</p>
+          </div>
+          <div class="github-banner-buttons">
+            <a href="https://github.com/mohithgowd8/" target="_blank" rel="noopener noreferrer" class="btn-orange btn-compact">
+              <span>Visit on GitHub</span>
+              <span class="btn-arrow-circle">↗</span>
+            </a>
+            <button type="button" class="btn-white btn-compact" id="mobileToggleProjectsBtn" aria-expanded="false">
+              <span id="projectsToggleLabel">Open My Projects</span>
+              <span class="btn-arrow-circle">↓</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="mobile-projects-wrapper" id="mobileProjectsWrapper">
+          <!-- Filter Category Tabs -->
+          <div class="project-filters reveal">
+            <button class="filter-btn active" data-filter="all">All Projects</button>
+            <button class="filter-btn" data-filter="web">Web Development</button>
+            <button class="filter-btn" data-filter="ai">AI &amp; Prototypes</button>
+            <button class="filter-btn" data-filter="creative">Creative &amp; Media</button>
+          </div>
+
+          <!-- Project Cards Showcase (Content-Focused Editorial Grid - No Sample Images) -->
+          <div class="projects-list">
+
+          <!-- Project 01: Mandi Mitra -->
+          <div class="project-card reveal" data-category="web ai">
+            <div class="project-card-header">
+              <span class="project-number-badge">01</span>
+              <div class="project-meta-row">
+                <span class="proj-badge-status completed">Completed</span>
+                <span class="proj-badge-honor">🏆 3rd Prize · Rashtriya Innovation Challenge 2026 (₹1,000)</span>
+                <span class="proj-badge-category">Agricultural Platform</span>
+              </div>
+            </div>
+            <h3 class="project-title">Mandi Mitra — Farmer-to-Buyer Agricultural Marketplace</h3>
+            <p class="project-desc">
+              A localized agricultural direct-trade web platform developed in Telugu language (రైతుల నుండి నేరుగా పంటలు) enabling farmers to sell crops directly to wholesale buyers without intermediaries. Features real-time price intelligence across regional mandis, crop grade categorizations, farmer statements, and Gemini AI price guidance.
+            </p>
+            <div class="project-tech-tags">
+              <span class="tech-tag">React 19</span>
+              <span class="tech-tag">TypeScript</span>
+              <span class="tech-tag">Tailwind CSS</span>
+              <span class="tech-tag">Express.js</span>
+              <span class="tech-tag">Google Gemini AI</span>
+            </div>
+            <div class="project-card-footer">
+              <a href="https://github.com/mohithgowd8/" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                <span>View GitHub Repository</span>
+                <span class="btn-arrow-circle">↗</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Project 02: Hotel Adithya Central -->
+          <div class="project-card reveal" data-category="web">
+            <div class="project-card-header">
+              <span class="project-number-badge">02</span>
+              <div class="project-meta-row">
+                <span class="proj-badge-status completed">Completed Web Application</span>
+                <span class="proj-badge-category">Hospitality &amp; Events</span>
+              </div>
+            </div>
+            <h3 class="project-title">Hotel Adithya Central — Banquets, Restaurant &amp; Catering</h3>
+            <p class="project-desc">
+              High-end responsive web application for Hotel Adithya Central in Eluru, Andhra Pradesh. Built to present luxury AC banquet venues (Aarna Banquets and Achuta Banquet), fine dining restaurant menus, and outdoor catering services with rich photography and localized SEO structured data.
+            </p>
+            <div class="project-tech-tags">
+              <span class="tech-tag">React 18</span>
+              <span class="tech-tag">TypeScript</span>
+              <span class="tech-tag">Tailwind CSS</span>
+              <span class="tech-tag">Vite</span>
+              <span class="tech-tag">Lucide Icons</span>
+            </div>
+            <div class="project-card-footer">
+              <a href="#contact" class="project-link-btn">
+                <span>Inquire Details</span>
+                <span class="btn-arrow-circle">➔</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Project 03: Chaitanya School Website -->
+          <div class="project-card reveal" data-category="web">
+            <div class="project-card-header">
+              <span class="project-number-badge">03</span>
+              <div class="project-meta-row">
+                <span class="proj-badge-status completed">Completed Website</span>
+                <span class="proj-badge-category">Education &amp; Institution</span>
+              </div>
+            </div>
+            <h3 class="project-title">Chaitanya School — Modern Educational Website</h3>
+            <p class="project-desc">
+              A responsive institutional website designed and developed for Chaitanya School. Features comprehensive sections for academic curriculum, STEM innovation labs, faculty directory, student activity galleries, and digital admissions inquiry portals.
+            </p>
+            <div class="project-tech-tags">
+              <span class="tech-tag">HTML5</span>
+              <span class="tech-tag">CSS3</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">Responsive Design</span>
+            </div>
+            <div class="project-card-footer">
+              <a href="#contact" class="project-link-btn">
+                <span>View Project Details</span>
+                <span class="btn-arrow-circle">➔</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Project 04: Vinayaka Smrithi AI Photo Booth -->
+          <div class="project-card reveal" data-category="ai creative">
+            <div class="project-card-header">
+              <span class="project-number-badge">04</span>
+              <div class="project-meta-row">
+                <span class="proj-badge-status prototype">Event Prototype</span>
+                <span class="proj-badge-category">Computer Vision &amp; AI</span>
+              </div>
+            </div>
+            <h3 class="project-title">Vinayaka Smrithi — Ganesh Chaturthi AI Photo Booth</h3>
+            <p class="project-desc">
+              An interactive festival AI photo booth developed for Ganesh Chaturthi. Features mobile photo capture, real-time Google MediaPipe selfie segmentation, traditional festival attire compositing, separate laptop camera kiosk and mobile participant interfaces, and instant QR-code photo download tokens.
+            </p>
+            <div class="project-tech-tags">
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">Google MediaPipe</span>
+              <span class="tech-tag">HTML5 Canvas</span>
+              <span class="tech-tag">QR Code API</span>
+            </div>
+            <div class="project-card-footer">
+              <a href="#contact" class="project-link-btn">
+                <span>Explore Workflow</span>
+                <span class="btn-arrow-circle">➔</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Project 05: QueueLess AI -->
+          <div class="project-card reveal" data-category="ai">
+            <div class="project-card-header">
+              <span class="project-number-badge">05</span>
+              <div class="project-meta-row">
+                <span class="proj-badge-status prototype">Prototype / Concept</span>
+                <span class="proj-badge-category">Healthcare &amp; AI</span>
+              </div>
+            </div>
+            <h3 class="project-title">QueueLess AI — Smart Hospital Queue Prediction</h3>
+            <p class="project-desc">
+              An AI-assisted hospital waiting-time prediction and outpatient queue management system. Designed for digital token generation, real-time queue tracking, smartphone web access, and inclusive accessibility via keypad phone IVR support and automated voice reminders to alleviate hospital overcrowding.
+            </p>
+            <div class="project-tech-tags">
+              <span class="tech-tag">AI Prediction Models</span>
+              <span class="tech-tag">IVR &amp; Voice Reminders</span>
+              <span class="tech-tag">Hospital OPD Dashboard</span>
+            </div>
+            <div class="project-card-footer">
+              <a href="#contact" class="project-link-btn">
+                <span>View Concept Details</span>
+                <span class="btn-arrow-circle">➔</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Project 06: CodeSphere -->
+          <div class="project-card reveal" data-category="web ai">
+            <div class="project-card-header">
+              <span class="project-number-badge">06</span>
+              <div class="project-meta-row">
+                <span class="proj-badge-status prototype">EdTech Prototype</span>
+                <span class="proj-badge-category">Interactive Learning</span>
+              </div>
+            </div>
+            <h3 class="project-title">CodeSphere — Educational Technology Platform</h3>
+            <p class="project-desc">
+              An educational technology platform built for student developers to practice programming concepts interactively. Features structured frontend learning roadmaps, an integrated in-browser code editor, interactive test execution console, and milestone skill verification.
+            </p>
+            <div class="project-tech-tags">
+              <span class="tech-tag">Frontend Web Tech</span>
+              <span class="tech-tag">In-Browser Code Playground</span>
+              <span class="tech-tag">Interactive UI</span>
+            </div>
+            <div class="project-card-footer">
+              <a href="https://github.com/mohithgowd8/" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                <span>View GitHub Repository</span>
+                <span class="btn-arrow-circle">↗</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Project 07: PATINOTE AI -->
+          <div class="project-card reveal" data-category="ai">
+            <div class="project-card-header">
+              <span class="project-number-badge">07</span>
+              <div class="project-meta-row">
+                <span class="proj-badge-status completed">Hackathon Winning Project</span>
+                <span class="proj-badge-honor">🏆 Recognized as Winning Team · OPTI FORGE'26</span>
+              </div>
+            </div>
+            <h3 class="project-title">PATINOTE AI — Autonomous Multilingual Patient Case Taking</h3>
+            <p class="project-desc">
+              Autonomous intelligence system engineered for the OPTI FORGE'26 AI Hackathon (IEEE Vardhaman &amp; WIE AG Hyderabad Section). Solves the clinical challenge of structured patient symptom intake across regional languages, automatically extracting chief complaints, red flags, and producing verified clinical consultation summaries.
+            </p>
+            <div class="project-tech-tags">
+              <span class="tech-tag">Autonomous AI</span>
+              <span class="tech-tag">Multilingual NLP</span>
+              <span class="tech-tag">Clinical Structuring</span>
+              <span class="tech-tag">Algorithm Design</span>
+            </div>
+            <div class="project-card-footer">
+              <a href="#achievements" class="project-link-btn">
+                <span>View Hackathon Award</span>
+                <span class="btn-arrow-circle">➔</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Project 08: Smart RollCall -->
+          <div class="project-card reveal" data-category="web ai">
+            <div class="project-card-header">
+              <span class="project-number-badge">08</span>
+              <div class="project-meta-row">
+                <span class="proj-badge-status prototype">Campus Project Prototype</span>
+                <span class="proj-badge-category">Automation &amp; Campus Systems</span>
+              </div>
+            </div>
+            <h3 class="project-title">Smart RollCall — QR-ID Student Attendance &amp; Permission Automation</h3>
+            <p class="project-desc">
+              AI &amp; QR-ID driven student attendance and gate-pass permission automation system developed for Ramachandra College of Engineering (Department of AI &amp; DS). Streamlines instant QR check-ins, attender portals, and HOD approvals without manual paper roll calls.
+            </p>
+            <div class="project-tech-tags">
+              <span class="tech-tag">Firebase</span>
+              <span class="tech-tag">HTML5-QRCode</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">Vite</span>
+            </div>
+            <div class="project-card-footer">
+              <a href="#contact" class="project-link-btn">
+                <span>Project Details</span>
+                <span class="btn-arrow-circle">➔</span>
+              </a>
+            </div>
+          </div>
+
+        </div> <!-- End .projects-list -->
+      </div> <!-- End #mobileProjectsWrapper -->
+    </div> <!-- End .container -->
+  </section>
+
+
+    <!-- ========================================================
+         SECTION 09: EDUCATION & INTERNSHIP EXPERIENCE
+         ======================================================== -->
+    <section class="journey-section" id="journey">
+      <div class="container">
+        <div class="section-center-header">
+          <div class="section-tag reveal">
+            <span class="tag-dots"><span></span><span></span></span>
+            <span>Academic &amp; Professional Journey</span>
+          </div>
+          <h2 class="section-title reveal">
+            My <span class="highlight-orange">Education &amp; Internship</span><span class="sparkle">✦</span>
+          </h2>
+          <p class="section-subtext reveal">
+            Accurate, verified timeline of my education and industry internship exposure.
+          </p>
+        </div>
+
+        <!-- Split Cards Layout -->
+        <div class="journey-grid">
+
+          <!-- Left Card: Education Timeline -->
+          <div class="journey-card reveal">
+            <div class="journey-card-header">
+              <div class="journey-header-icon orange-bg">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3zm0 13.5l-7-3.82V17c0 2.76 3.13 5 7 5s7-2.24 7-5v-4.32l-7 3.82z"/></svg>
+              </div>
+              <div>
+                <h3 class="journey-card-title">Education</h3>
+                <span class="journey-card-sub">Academic Timeline</span>
+              </div>
+            </div>
+
+            <div class="journey-timeline">
+              <!-- Item 1: College (Correct Autonomous name & Current status) -->
+              <div class="timeline-item">
+                <div class="timeline-meta">
+                  <h4 class="item-institution">Ramachandra College of Engineering (Autonomous)</h4>
+                  <span class="date-badge current">Currently Studying · 2nd Year</span>
+                </div>
+                <p class="item-course">B.Tech — Artificial Intelligence and Data Science (AI &amp; DS)</p>
+                <p class="item-location">Eluru, Andhra Pradesh</p>
+                <p class="item-details">
+                  Hands-on learning across artificial intelligence, data engineering, responsive frontend web design, computer vision, data structures, and hackathon project innovation.
+                </p>
+              </div>
+
+              <!-- Item 2: Intermediate (Correct: Narayana Junior College) -->
+              <div class="timeline-item">
+                <div class="timeline-meta">
+                  <h4 class="item-institution">Narayana Junior College</h4>
+                  <span class="date-badge">Intermediate</span>
+                </div>
+                <p class="item-course">Intermediate Higher Secondary Education</p>
+                <p class="item-location">Andhra Pradesh, India</p>
+                <p class="item-details">
+                  Completed senior secondary education focusing on mathematics, physics, and science foundations.
+                </p>
+              </div>
+
+              <!-- Item 3: School (Correct: Chekkapalli) -->
+              <div class="timeline-item">
+                <div class="timeline-meta">
+                  <h4 class="item-institution">Chekkapalli</h4>
+                  <span class="date-badge">School Education</span>
+                </div>
+                <p class="item-course">Secondary School Education</p>
+                <p class="item-location">Chekkapalli, Andhra Pradesh, India</p>
+                <p class="item-details">
+                  Foundational schooling emphasizing mathematics, science, language, and early interest in digital technology.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Card: Internship Experience -->
+          <div class="journey-card reveal">
+            <div class="journey-card-header">
+              <div class="journey-header-icon dark-bg">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 6h-4V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2H4a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2zm-8-2h4v2h-4V4zm8 15H4V8h16v11z"/></svg>
+              </div>
+              <div>
+                <h3 class="journey-card-title">Internship Experience</h3>
+                <span class="journey-card-sub">Industry Exposure</span>
+              </div>
+            </div>
+
+            <div class="journey-timeline">
+              <!-- Item 1: ThinkEdges Internship -->
+              <div class="timeline-item">
+                <div class="timeline-meta">
+                  <h4 class="item-institution">ThinkEdges</h4>
+                  <span class="date-badge completed">One Month · Completed</span>
+                </div>
+                <p class="item-course">Marketing Intern</p>
+                <p class="item-location">Corporate Internship</p>
+                <p class="item-details">
+                  Completed a one-month internship gaining real-world industry exposure in digital communication, promotional activities, and content-related work.
+                </p>
+                <div class="intern-learnings">
+                  <span class="learn-tag">Marketing Exposure</span>
+                  <span class="learn-tag">Digital Communication</span>
+                  <span class="learn-tag">Promotional Activities</span>
+                  <span class="learn-tag">Content-Related Work</span>
+                  <span class="learn-tag">Professional Learning</span>
+                  <span class="learn-tag">Team Collaboration</span>
+                </div>
+              </div>
+
+              <!-- Item 2: Creative & Web Freelance / Independent Projects -->
+              <div class="timeline-item">
+                <div class="timeline-meta">
+                  <h4 class="item-institution">Independent Projects &amp; Digital Design</h4>
+                  <span class="date-badge">Ongoing Practice</span>
+                </div>
+                <p class="item-course">Web Designer &amp; Digital Content Creator</p>
+                <p class="item-location">Self-Directed &amp; Collaborative</p>
+                <p class="item-details">
+                  Designing modern responsive websites (Hotel Adithya Central, Chaitanya School), building hackathon prototypes, creating video showreels, and exploring AI-assisted creative workflows.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+  </section>
+
+
+    <!-- ========================================================
+         SECTION 10: ACHIEVEMENTS & HACKATHONS
+         ======================================================== -->
+    <section class="awards-section dark-section" id="achievements">
+      <div class="container">
+        <div class="section-center-header">
+          <div class="section-tag dark reveal">
+            <span class="tag-dots"><span></span><span></span></span>
+            <span>Honors &amp; Recognition</span>
+          </div>
+          <h2 class="section-title dark reveal">
+            Achievements &amp; <span class="highlight-orange">Hackathons</span><span class="sparkle">✦</span>
+          </h2>
+          <p class="section-subtext light reveal">
+            Verified competition prizes and team hackathon recognitions.
+          </p>
+        </div>
+
+        <div class="achievements-cards-grid">
+
+          <!-- Achievement 01: Mandi Mitra - Rashtriya Innovation Challenge 2026 -->
+          <div class="achievement-card reveal">
+            <div class="achievement-cert-wrapper">
+              <img src="assets/images/certificate-rih.jpg" alt="Rashtriya Innovation Challenge 2026 Certificate - Third Prize" class="achievement-cert-img">
+              <button class="cert-expand-btn open-lightbox-btn" data-img="assets/images/certificate-rih.jpg" data-caption="Rashtriya Innovation Challenge 2026 — Third Prize (₹1,000) for Mandi Mitra" title="Enlarge Certificate">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+                <span>View Certificate</span>
+              </button>
+            </div>
+            <div class="achievement-body">
+              <div class="achievement-meta">
+                <span class="award-pill orange">3rd Prize · ₹1,000 Cash Prize</span>
+                <span class="award-event">Rashtriya Innovation Challenge 2026</span>
+              </div>
+              <h3 class="achievement-title">Mandi Mitra — Regional Agricultural Innovation</h3>
+              <p class="achievement-desc">
+                Participated in the Rashtriya Innovation Challenge 2026 with <strong>Mandi Mitra</strong>, securing the <strong>Third Prize</strong> with a cash award of <strong>₹1,000</strong>. Recognized for innovative agricultural direct-trade architecture, Telugu language accessibility, real-time market price transparency, and strong team execution.
+              </p>
+              <div class="achievement-highlights">
+                <span>✦ Innovation &amp; Supply Chain Direct Trade</span>
+                <span>✦ Teamwork &amp; Rapid Project Development</span>
+                <span>✦ Telugu Language Regional Accessibility</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Achievement 02: OPTI FORGE'26 AI Hackathon -->
+          <div class="achievement-card reveal">
+            <div class="achievement-cert-wrapper">
+              <img src="assets/images/certificate-vardhaman.jpg" alt="OPTI FORGE'26 AI Hackathon Certificate - Vardhaman College of Engineering" class="achievement-cert-img">
+              <button class="cert-expand-btn open-lightbox-btn" data-img="assets/images/certificate-vardhaman.jpg" data-caption="OPTI FORGE'26 AI Hackathon: Algorithm Design Challenge — Recognized as a Winning Team (IEEE WIE AG Hyderabad Section)" title="Enlarge Certificate">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+                <span>View Certificate</span>
+              </button>
+            </div>
+            <div class="achievement-body">
+              <div class="achievement-meta">
+                <span class="award-pill orange">Recognized as Winning Team</span>
+                <span class="award-event">OPTI FORGE'26 — AI Hackathon</span>
+              </div>
+              <h3 class="achievement-title">OPTI FORGE'26 — Algorithm Design Challenge</h3>
+              <p class="achievement-desc">
+                Competed in <strong>OPTI FORGE'26 – AI Hackathon: Algorithm Design Challenge</strong>, organized by <strong>IEEE WIE AG Hyderabad Section</strong> in collaboration with <strong>IEEE Vardhaman Student Branch</strong> at Vardhaman College of Engineering, Shamshabad, Hyderabad on <strong>30 September 2026</strong>.
+              </p>
+              <p class="achievement-desc">
+                Tackled the challenging problem statement: <em>Autonomous Intelligence – Patient Case Taking</em> with the <strong>PATINOTE AI</strong> system, earning recognition as a winning team for clinical triage logic, multilingual symptom intake, and algorithmic precision.
+              </p>
+              <div class="achievement-highlights">
+                <span>✦ Event: OPTI FORGE'26 Algorithm Design Challenge</span>
+                <span>✦ Organizers: IEEE WIE AG Hyderabad &amp; IEEE Vardhaman</span>
+                <span>✦ Problem: Autonomous Intelligence – Patient Case Taking</span>
+                <span>✦ Team Achievement: Winning Team Recognition</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+  </section>
+
+
+    <!-- ========================================================
+         SECTION 11: MY WORK PROCESS
+         ======================================================== -->
+    <section class="process-section" id="process">
+      <div class="container">
+        <div class="section-center-header">
+          <div class="section-tag reveal">
+            <span class="tag-dots"><span></span><span></span></span>
+            <span>How I Work</span>
+          </div>
+          <h2 class="section-title reveal">
+            My Creative &amp; <span class="highlight-orange">Development Process</span><span class="sparkle">✦</span>
+          </h2>
+          <p class="section-subtext reveal">
+            A disciplined, step-by-step approach to taking ideas from concept to functional reality.
+          </p>
+        </div>
+
+        <div class="process-grid">
+
+          <!-- Step 01 -->
+          <div class="process-card reveal">
+            <div class="process-step-num">01.</div>
+            <div class="process-icon">🔍</div>
+            <h3 class="process-step-title">Discover</h3>
+            <p class="process-step-desc">
+              Understanding the genuine problem, target audience, technical requirements, and core objectives before writing code.
+            </p>
+          </div>
+
+          <!-- Step 02 -->
+          <div class="process-card reveal">
+            <div class="process-step-num">02.</div>
+            <div class="process-icon">📐</div>
+            <h3 class="process-step-title">Plan &amp; Wireframe</h3>
+            <p class="process-step-desc">
+              Organizing information architecture, designing user journeys, sketching wireframes, and mapping technical components.
+            </p>
+          </div>
+
+          <!-- Step 03 -->
+          <div class="process-card reveal">
+            <div class="process-step-num">03.</div>
+            <div class="process-icon">🎨</div>
+            <h3 class="process-step-title">Design &amp; AI Assist</h3>
+            <p class="process-step-desc">
+              Crafting aesthetic layouts, choosing typography and color harmonies, and leveraging AI tools to accelerate asset creation.
+            </p>
+          </div>
+
+          <!-- Step 04 -->
+          <div class="process-card reveal">
+            <div class="process-step-num">04.</div>
+            <div class="process-icon">🚀</div>
+            <h3 class="process-step-title">Build &amp; Deploy</h3>
+            <p class="process-step-desc">
+              Coding clean, responsive HTML/CSS/JS, testing across devices, gathering peer feedback, and deploying live to production.
+            </p>
+          </div>
+
+        </div>
+      </div>
+  </section>
+
+
+    <!-- ========================================================
+         SECTION 12: CONTACT ME
+         ======================================================== -->
+    <section class="contact-section" id="contact">
+      <div class="container">
+        
+        <div class="section-center-header">
+          <div class="section-tag reveal">
+            <span class="tag-dots"><span></span><span></span></span>
+            <span>Get in Touch</span>
+          </div>
+          <h2 class="section-title reveal">
+            Let's Connect for <span class="highlight-orange">Projects &amp; Ideas</span><span class="sparkle">✦</span>
+          </h2>
+          <p class="section-subtext reveal">
+            Have a website project, hackathon collaboration, creative design idea, or internship opportunity? Reach out!
+          </p>
+        </div>
+
+        <!-- Mobile Contact Form Expandable Trigger -->
+        <button class="mobile-form-toggle-bar" id="contactToggleBtn" type="button" aria-expanded="false" aria-controls="contactFormBox">
+          <span class="form-toggle-left">
+            <span class="form-toggle-icon">✉</span>
+            <span>Write a Message / Send Inquiry</span>
+          </span>
+          <span class="form-toggle-pill">
+            <span class="form-toggle-text">Open Form</span>
+            <span class="form-toggle-arrow">▼</span>
+          </span>
+        </button>
+
+        <div class="contact-grid">
+
+          <!-- Left Side: Interactive Contact Form -->
+          <div class="contact-form-box reveal" id="contactFormBox">
+            <form id="contactForm" class="contact-form" novalidate>
+              
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="contactName">Your Name *</label>
+                  <input type="text" id="contactName" name="name" placeholder="Mohith Gowd" required>
+                  <span class="form-error" id="nameError"></span>
+                </div>
+                <div class="form-group">
+                  <label for="contactEmail">Email Address *</label>
+                  <input type="email" id="contactEmail" name="email" placeholder="name@domain.com" required>
+                  <span class="form-error" id="emailError"></span>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="contactPhone">Phone Number</label>
+                  <input type="tel" id="contactPhone" name="phone" placeholder="+91 98765 43210">
+                </div>
+                <div class="form-group">
+                  <label for="contactInterest">Interested In *</label>
+                  <select id="contactInterest" name="interest" required>
+                    <option value="" disabled selected>Select an Area of Collaboration</option>
+                    <option value="Website Design">Website Design</option>
+                    <option value="Frontend Website Development">Frontend Website Development</option>
+                    <option value="UI/UX Design">UI/UX Design</option>
+                    <option value="Landing Page Creation">Landing Page Creation</option>
+                    <option value="Creative Poster Design">Creative Poster Design</option>
+                    <option value="Video Editing">Video Editing</option>
+                    <option value="AI Hackathon Collaboration">AI Hackathon Collaboration</option>
+                    <option value="Internship Opportunity">Internship Opportunity</option>
+                  </select>
+                  <span class="form-error" id="interestError"></span>
+                </div>
+              </div>
+
+              <div class="form-group full-width">
+                <label for="contactSubject">Subject</label>
+                <input type="text" id="contactSubject" name="subject" placeholder="Project Collaboration / Website Inquiry">
+              </div>
+
+              <div class="form-group full-width">
+                <label for="contactMessage">Your Message *</label>
+                <textarea id="contactMessage" name="message" rows="5" placeholder="Tell me about your project, idea, or questions..." required></textarea>
+                <span class="form-error" id="messageError"></span>
+              </div>
+
+              <div class="form-submit-row">
+                <button type="submit" class="btn-orange submit-btn" id="submitFormBtn">
+                  <span>Send Message</span>
+                  <span class="btn-arrow-circle">➔</span>
+                </button>
+                <div class="form-status" id="formStatus"></div>
+              </div>
+
+            </form>
+          </div>
+
+          <!-- Right Side: Dark Contact Information Card -->
+          <div class="contact-info-card reveal">
+            <div class="info-card-header">
+              <span class="avail-badge">
+                <span class="avail-dot"></span> Open to Projects &amp; Collaborations
+              </span>
+              <h3 class="info-title">Let's build something remarkable together.</h3>
+              <p class="info-subtitle">
+                I'm actively interested in website design, frontend engineering, AI hackathons, and creative digital media opportunities.
+              </p>
+            </div>
+
+            <div class="info-items">
+              <!-- Direct Email -->
+              <div class="info-item">
+                <div class="info-icon">📧</div>
+                <div>
+                  <span class="info-label">Direct Email</span>
+                  <a href="mailto:maridhumohithgowd630@gmail.com" class="info-value email-link">maridhumohithgowd630@gmail.com</a>
+                </div>
+              </div>
+
+              <!-- GitHub Profile -->
+              <div class="info-item">
+                <div class="info-icon">💻</div>
+                <div>
+                  <span class="info-label">GitHub</span>
+                  <a href="https://github.com/mohithgowd8/" target="_blank" rel="noopener noreferrer" class="info-value">github.com/mohithgowd8</a>
+                </div>
+              </div>
+
+              <!-- Location -->
+              <div class="info-item">
+                <div class="info-icon">📍</div>
+                <div>
+                  <span class="info-label">Location</span>
+                  <p class="info-value">Eluru, Andhra Pradesh, India</p>
+                </div>
+              </div>
+
+              <!-- College Affiliation -->
+              <div class="info-item">
+                <div class="info-icon">🎓</div>
+                <div>
+                  <span class="info-label">Education</span>
+                  <p class="info-value">Ramachandra College of Engineering (Autonomous), Eluru</p>
+                  <p class="info-sub-val">B.Tech 2nd Year · AI &amp; Data Science (AI &amp; DS)</p>
+                </div>
+              </div>
+
+              <!-- Social Links with Verified Profiles -->
+              <div class="info-item">
+                <div class="info-icon">🌐</div>
+                <div>
+                  <span class="info-label">Social Media Profiles</span>
+                  <div class="info-socials">
+                    <a href="https://github.com/mohithgowd8/" target="_blank" rel="noopener noreferrer" class="info-social-link" title="GitHub">GitHub</a>
+                    <a href="https://www.linkedin.com/in/mohithgowd-maridhu-1380763ba/" target="_blank" rel="noopener noreferrer" class="info-social-link" title="LinkedIn">LinkedIn</a>
+                    <a href="https://www.instagram.com/mohith_gowd_maridhu/?utm_source=ig_web_button_share_sheet" target="_blank" rel="noopener noreferrer" class="info-social-link" title="Instagram">Instagram</a>
+                    <a href="https://youtube.com/@buildwithmohith?si=613WlWeRdh5jbqO6" target="_blank" rel="noopener noreferrer" class="info-social-link" title="YouTube">YouTube</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ========================================================
+         SECTION 13: FREQUENTLY ASKED QUESTIONS
+         ======================================================== -->
+    <section class="faq-section dark-section" id="faq">
+      <div class="container">
+        
+        <div class="section-center-header">
+          <div class="section-tag dark reveal">
+            <span class="tag-dots"><span></span><span></span></span>
+            <span>Frequently Asked</span>
+          </div>
+          <h2 class="section-title dark reveal">
+            Questions? <span class="highlight-orange">Look Here.</span><span class="sparkle">✦</span>
+          </h2>
+        </div>
+
+        <div class="faq-accordion" id="faqAccordion">
+
+          <!-- FAQ 01 -->
+          <div class="faq-item active reveal">
+            <button class="faq-question" aria-expanded="true">
+              <span>01. What kind of projects do you build?</span>
+              <span class="faq-icon-circle">−</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                I build responsive websites, frontend web applications, interactive landing pages, and AI-assisted prototypes. Examples include <strong>Hotel Adithya Central</strong> (a client web app for banquets and catering in Eluru), <strong>Mandi Mitra</strong> (an award-winning agricultural marketplace platform in Telugu), <strong>Chaitanya School Website</strong>, and the <strong>Vinayaka Smrithi AI Photo Booth</strong>.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ 02 -->
+          <div class="faq-item reveal">
+            <button class="faq-question" aria-expanded="false">
+              <span>02. What is your current academic status?</span>
+              <span class="faq-icon-circle">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                I am currently a <strong>Second-Year B.Tech student</strong> in the <strong>Artificial Intelligence and Data Science (AI &amp; DS)</strong> department at <strong>Ramachandra College of Engineering (Autonomous), Eluru, Andhra Pradesh</strong>.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ 03 -->
+          <div class="faq-item reveal">
+            <button class="faq-question" aria-expanded="false">
+              <span>03. How do you integrate AI into your creative and development work?</span>
+              <span class="faq-icon-circle">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                I integrate AI tools such as Google Gemini, ChatGPT, Claude, and computer vision models (like Google MediaPipe) into web development workflows for rapid wireframing, prompt engineering, multimodal analysis, and building intelligent prototypes such as PATINOTE AI and QueueLess AI.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ 04 -->
+          <div class="faq-item reveal">
+            <button class="faq-question" aria-expanded="false">
+              <span>04. How can I get in touch with you?</span>
+              <span class="faq-icon-circle">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                You can reach out directly via email at <a href="mailto:maridhumohithgowd630@gmail.com" class="highlight-orange">maridhumohithgowd630@gmail.com</a>, connect on <a href="https://www.linkedin.com/in/mohithgowd-maridhu-1380763ba/" target="_blank" rel="noopener noreferrer" class="highlight-orange">LinkedIn</a>, or submit the contact form above.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ========================================================
+       SECTION 14: FOOTER
+       ======================================================== -->
+  <footer class="footer-section dark-section">
+    <div class="container footer-container">
+      
+      <!-- Top Row: Brand & Summary -->
+      <div class="footer-top-row">
+        <div class="footer-brand-box">
+          <a href="#home" class="footer-brand">
+            <span class="logo-circle">M</span>
+            <span class="logo-text">Mohith Gowd Maridhu<span class="brand-dot">.</span></span>
+          </a>
+          <p class="footer-bio">
+            Creative Web Designer, Frontend Developer, UI/UX Enthusiast, and 2nd Year AI &amp; Data Science student at Ramachandra College of Engineering (Autonomous), Eluru.
+          </p>
+          <p class="footer-tagline">“Turning Creative Ideas Into Meaningful Digital Experiences.”</p>
+        </div>
+
+        <div class="footer-nav-box">
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#toolkit">Digital Toolkit</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#journey">Journey</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-social-box">
+          <h4 class="footer-col-title">Connect</h4>
+          <div class="footer-contact-details">
+            <p><strong>Email:</strong> <a href="mailto:maridhumohithgowd630@gmail.com">maridhumohithgowd630@gmail.com</a></p>
+            <p><strong>GitHub:</strong> <a href="https://github.com/mohithgowd8/" target="_blank" rel="noopener noreferrer">github.com/mohithgowd8</a></p>
+            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/mohithgowd-maridhu-1380763ba/" target="_blank" rel="noopener noreferrer">Mohith Gowd Maridhu</a></p>
+            <p><strong>Location:</strong> Eluru, Andhra Pradesh, India</p>
+          </div>
+          <div class="footer-social-links">
+            <a href="https://github.com/mohithgowd8/" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="GitHub" title="GitHub">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/mohithgowd-maridhu-1380763ba/" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="LinkedIn" title="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.64 1.64 0 1 0 0-3.28 1.64 1.64 0 0 0 0 3.28m1.4 9.74V9.97H5.06v8.53z"/></svg>
+            </a>
+            <a href="https://www.instagram.com/mohith_gowd_maridhu/?utm_source=ig_web_button_share_sheet" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Instagram" title="Instagram">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+            </a>
+            <a href="https://youtube.com/@buildwithmohith?si=613WlWeRdh5jbqO6" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="YouTube" title="YouTube">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            </a>
+            <a href="mailto:maridhumohithgowd630@gmail.com" class="footer-social-btn" aria-label="Email" title="Email">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Bar with Copyright & Back to Top -->
+      <div class="footer-bottom-bar">
+        <p class="copyright-text">
+          &copy; 2026 <strong>Mohith Gowd Maridhu</strong>. All Rights Reserved. Built with HTML5, CSS3, &amp; Vanilla JavaScript.
+        </p>
+
+        <button class="back-to-top" id="backToTop" aria-label="Back to top of page" title="Back to top">
+          <span>Back to Top</span>
+          <span class="btt-arrow">↑</span>
+        </button>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Lightbox Modal for Certificate Previews -->
+  <div class="lightbox-modal" id="imageLightbox" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="lightbox-overlay" id="lightboxOverlay"></div>
+    <div class="lightbox-content">
+      <button class="lightbox-close" id="lightboxClose" aria-label="Close Preview">✕</button>
+      <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg'/>" alt="Certificate Preview" class="lightbox-img" id="lightboxImg">
+      <p class="lightbox-caption" id="lightboxCaption"></p>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container for Form Submission & Resume Action -->
+  <div class="toast-notification" id="toastNotification" role="alert" aria-live="polite">
+    <div class="toast-icon">✓</div>
+    <div class="toast-content">
+      <h4 class="toast-title">Notification</h4>
+      <p class="toast-message">Action processed.</p>
+    </div>
+  </div>
+
+  <!-- Main JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>

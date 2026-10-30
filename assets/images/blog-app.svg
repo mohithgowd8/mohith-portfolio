@@ -1,0 +1,19 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgB3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2A1E17"/>
+      <stop offset="100%" stop-color="#140E0A"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#bgB3)"/>
+  <!-- Mobile App Connection visualization -->
+  <g transform="translate(160, 50)">
+    <rect x="50" y="10" width="180" height="290" rx="26" fill="#1C140E" stroke="#FF9D00" stroke-width="2"/>
+    <circle cx="140" cy="120" r="45" fill="#FF9D00" fill-opacity="0.2"/>
+    <text x="140" y="135" font-family="'Outfit', sans-serif" font-size="40" text-anchor="middle">❤️</text>
+    <text x="140" y="190" font-family="'Outfit', sans-serif" font-weight="900" font-size="16" fill="#FFF" text-anchor="middle">Human Connection</text>
+    <text x="140" y="210" font-family="'Inter', sans-serif" font-size="11" fill="#A89E94" text-anchor="middle">Empathy in UI Design</text>
+    <rect x="80" y="240" width="120" height="32" rx="16" fill="#FF9D00"/>
+    <text x="140" y="260" font-family="'Outfit', sans-serif" font-weight="800" font-size="12" fill="#140E0A" text-anchor="middle">Engage Now</text>
+  </g>
+</svg>
